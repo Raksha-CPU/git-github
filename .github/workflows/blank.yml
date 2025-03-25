@@ -15,4 +15,4 @@ jobs:
 
     steps:
       - name: Print Environment
-        run: echo "Using environment: ${{ inputs.ENVIRONMENT }}"
+        run: echo "Using environment"
