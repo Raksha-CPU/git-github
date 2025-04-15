@@ -1,18 +1,13 @@
-name: Simple Environment Workflow
+name: Simple Workflow
 
 on:
-  workflow_dispatch:
-    inputs:
-      ENVIRONMENT:
-        description: "Select environment"
-        required: true
-        default: "demo"
+  schedule:
+    - cron: '22 12 15 4 *'  # Runs today at 5:52 PM IST (12:22 PM UTC)
+  workflow_dispatch:   # Allows manual trigger
 
 jobs:
-  test-environment:
+  simple-job:
     runs-on: ubuntu-latest
-    environment: ${{ inputs.ENVIRONMENT }}
-
     steps:
-      - name: Print Environment
-        run: echo "Using environment"
+      - name: Print Current Date
+        run: date
