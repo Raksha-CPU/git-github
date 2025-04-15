@@ -2,8 +2,7 @@ name: Simple Workflow
 
 on:
   schedule:
-    - cron: '22 12 15 4 *'  # Runs today at 5:52 PM IST (12:22 PM UTC)
-  workflow_dispatch:   # Allows manual trigger
+    - cron: '28 12 * * *'  # Runs today at 5:52 PM IST (12:22 PM UTC)
 
 jobs:
   simple-job:
