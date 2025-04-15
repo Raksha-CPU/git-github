@@ -1,12 +1,12 @@
-name: Simple Workflow
+# name: Simple Workflow
 
-on:
-  schedule:
-    - cron: '*/5 * * * *'  # Runs today at 5:52 PM IST (12:22 PM UTC)
+# on:
+#   schedule:
+#     - cron: '*/5 * * * *'  # Runs today at 5:52 PM IST (12:22 PM UTC)
 
-jobs:
-  simple-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Current Date
-        run: date
+# jobs:
+#   simple-job:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Print Current Date
+#         run: date
